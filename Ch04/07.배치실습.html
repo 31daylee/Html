@@ -134,6 +134,7 @@
     </article>
     <article>
         <style>
+            /*
             .box5{
                 position: relative;
                 width: 300px;
@@ -159,28 +160,34 @@
                 position: absolute;
                 top: 50px;
                 left: 50px;
-            }
-            /* 강사님 버전
-            .box5 > div {
-                position: absolute;
-                left: 50%;
-                top: 0;
-                margin-left: -100px;
-                width: 200px;
-                height: 200px;
-                background-color: green;
-            }
-            .box5 > div > div {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -50px;
-                margin-left: -50px;
-                width: 100px;
-                height: 200px;
-                background-color: blue;
-            }
-            */
+            }*/
+            .box5 {
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px dashed black;                    
+                }
+
+                .box5 > div {    
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                    margin:auto;
+                    width: 200px;
+                    height: 200px;
+                    background: green;                    
+                }
+                .box5 > div > div {        
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    margin: auto;
+                    width: 100px;
+                    height: 100px;
+                    background: blue;
+                }
 
         </style>
         <h4>5.다음과 같이 배치 하시오.</h4>
