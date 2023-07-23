@@ -1,0 +1,16 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font: 12px '돋움';
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+
+
+#wrapper{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
