@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TheResort</title>
+        <style>
+            * { 
+                 margin: 0;
+                 padding: 0;
+                 font: normal 12px '돋움';
+            }
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: #111; }
+
+            #container {
+                width: 100%;
+                height: auto;
+            }
+
+            header {
+                width: 100%;
+                height: 100px;
+                background-image: url(./images/header_bg.png);
+                background-repeat: repeat-x;
+                background-position: bottom;
+
+            }
+
+            header > div {
+                position: relative;
+                width: 1000px;
+                height: 100%;
+                margin: 0 auto;
+
+            }
+            header > div > .gnb {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 28px;
+            }
+            header > div > .gnb > li {
+                float: left;
+                width: 20%;
+                height: 100%;
+                border-left: 1px solid #fff;
+                box-sizing: border-box;
+                
+            }
+
+            header > div > .gnb > li:last-child {
+                border-right: 1px solid #fff; /*line에만 주면 1px-2px로 중복됨*/
+            }
+
+            header > div > .gnb > li > a {
+                display: block; /*a라인이라 w/h 적용안되므로 block으로 변경*/
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 28px; /*수직정렬*/
+                color: #fff;
+                font-weight: bold;
+                background: #becedb;
+                
+            }
+            header > div > p {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+
+            main {
+                width: 1000px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            main > div {
+                width: 100%;
+                height: 620px;
+                margin-top: 24px;
+                background-image: url(./images/main_bg.png);
+            }
+            main > div > .box {
+                position: relative;
+                float: left;
+                width: 200px;
+                height: 200px;
+                
+            }
+            main > div > .box1 {
+                background-image: url(./images/main_box1_bg.png);
+                position: relative;
+            }
+            main > div > .box1 > img:nth-child(1) {position: absolute; left: 0; top: -25px;}
+            main > div > .box1 > img:nth-child(2) {position: absolute; left: 0; top: 6px;}
+            main > div > .box2 {background-image: url(./images/main_box2_bg.png);}
+            main > div > .box3 {background-image: url(./images/main_box3_bg.png);}
+            main > div > .box4 {background-image: url(./images/main_box4_bg.png);}
+            main > div > .box5 {
+                background-image: url(./images/main_box5_bg.jpg);
+                clear: left;
+            }
+            main > div > .box6 {background-image: url(./images/main_box6_bg.jpg);}
+            main > div > .box7 {
+                clear: both;
+                margin-left: 200px;
+                background-image: url(./images/main_box7_bg.png);
+            }
+            main > div > .box > .tit {position: absolute; left: 18px; top: 24px;}
+            main > div > .box > .txt {position: absolute; left: 18px; top: 58px;}
+            main > div > .box > .img {position: absolute; right: 0; bottom: 0;}
+            main > div > .box > .go {position: absolute; right: 0; top: 0px;}
+
+            main > section {
+                width: 1000px;
+                height: 130px;
+                margin: 0 auto;
+                border-top: 1px solid #becedb;
+                padding-top: 20px;
+                
+            }
+            main > section > article {
+                float: left;
+                width: 25%;
+                height: 100%;
+                
+            }
+           
+            main > section > article.info1 {
+                width: 250px;
+                height: 130px;
+                float: left;
+                margin: 0 auto;
+            }
+            main > section > article.info1 >img:nth-child(1){
+                display: block;
+            }
+            main > section > article.info1 >img:nth-child(2){
+                margin-top: 10px;
+            }
+            #gal > a {
+                padding-top: 16px;
+                display: inline-block;
+                width: 75px;
+                height: 55px;
+            }
+            #gal > a > img {
+                width: 75px;
+                height: 55px;
+            }
+
+            footer {
+                width: 1000px;
+                height: 100px;
+                margin: 0 auto;
+            }
+
+            footer > #address {
+                border-top: 1px solid #b9cadc;
+            }
+            #address > .logo {
+                float: left;
+                padding-top: 14px;
+            }
+            footer > div > p {
+                font-size: 11px;
+                display: inline-block;
+                margin-top: 20px;
+                padding-left: 20px;
+                color: #555;
+                line-height: 20px;
+            }
+            footer > div > p > #copy {
+                display: inline-block;
+                font-family: verdana;
+                color: rgb(153, 153, 153);
+                padding-top: 4px;
+
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div>
+                   <a href="index2.html" class="logo"><img src="./images/header_logo.png" alt="THE RESORT"></a>
+                    <ul class="gnb">
+                        <li><a href="#">INTRODUCTION</a></li>
+                        <li><a href="#">ROOM</a></li>
+                        <li><a href="#">TRAVEL</a></li>
+                        <li><a href="#">INFORMATION</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                    </ul>
+                    <p>
+                        <a href="#">회원가입</a> |
+                        <a href="#">로그인</a> |
+                        <a href="#">고객센터</a>
+                    </p>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="box box1">
+                        <img src ="./images/main_box1_img.png" alt="나뭇가지">
+                        <img src ="./images/main_box1_txt.png" alt="여행하지 않는...">
+                    </div>
+                    <div class="box box2">
+                        <img src="./images/main_box2_tit.png" class="tit" alt="tour guide">
+                        <img src="./images/main_box2_txt.png" class="txt" alt="당신의 발걸음을...">
+                        <img src="./images/main_box2_img.png" class="img" alt="앨범">
+                    </div>
+                    <div class="box box3">
+                        <img src="./images/main_box3_tit.png" class="tit" alt="tour guide">
+                        <img src="./images/main_box3_txt.png" class="txt" alt="당신의 발걸음을...">
+                        <img src="./images/main_box3_img.png" class="img" alt="앨범">
+                        <img src="./images/main_box3_hot.png" alt="hot">
+                    </div>
+                    <div class="box box4">
+                        <img src="./images/main_box4_tit.png" class="tit" alt="tour guide">
+                        <img src="./images/main_box4_txt.png" class="txt" alt="당신의 발걸음을...">
+                        <img src="./images/main_box4_img.png" class="img" alt="앨범">
+                    </div>
+                    <div class="box box5">
+                        <img src="./images/main_box5_go.png" class="go" alt="고">
+                    </div>
+                    <div class="box box6">
+                        <img src="./images/main_box6_go.png" class="go" alt="고">
+                    </div>
+                    <div class="box box7">
+                        <img src="./images/main_box7_tit.png" class="tit" alt="tour guide">
+                        <img src="./images/main_box7_txt.png" class="txt" alt="당신의 발걸음을...">
+                        <img src="./images/main_box7_img.png" class="img" alt="앨범">
+                    </div>
+                </div>
+                <section>
+                    <article class="info1">
+                        <img src="./images/info.png" alt="info">
+                        <img src="./images/happy.png" alt="행복">
+                    </article>
+                    <article class="info2">
+                        <img src="./images/reser.png" alt="예약">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>></td>
+                                    <td>이번주말 예약될까요?ㅠㅠ</td>
+                                    <td>02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>예약문의합니다.</td>
+                                    <td>02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>회사 워크샵 문의</td>
+                                    <td>02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>29일~31일까지 자스민방 예...</td>
+                                    <td>02-19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </article>
+                    <article class="info3">
+                        <img src="./images/notice.png" alt="공지">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>></td>
+                                    <td>1111</td>
+                                    <td>04-11</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>풀장을오픈했어요.</td>
+                                    <td>04-19</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>실내 금연 꼭 지켜주세요</td>
+                                    <td>04-19</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>복층에는 8세 이하의 아동...</td>
+                                    <td>05-01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article class="info4">
+                        <img src="./images/gallery.png" alt="공지">
+                        <div id="gal">
+                            <a href="#"><img src="./images/main_latest_gallery1.jpg" alt="노을"></a>
+                            <a href="#"><img src="./images/main_latest_gallery2.jpg" alt="꽃"></a>
+                            <a href="#"><img src="./images/main_latest_gallery3.jpg" alt="꽃2"></a>
+                        </div>
+                    </article>
+                </section>
+
+
+            </main>
+            <footer>
+                <div id="address">
+                    <img src="images/footer_logo.png" class="logo" alt="logo">
+                    <p>
+                        (주)리조트 | 대표이사: 홍길동 | 소재지: 부산시 금정구 따듯한동 123-1
+                        <br>
+                        Tel: 070-000-0000/ Fax: 051-000-0000/ 사업자등록번호: 123-12-12345
+                        <br>
+                        <span id="copy">Copyright ⓒ (c) Since 2013
+                            <span id="resort">Resort</span>. All rights reserved
+                        </span>
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

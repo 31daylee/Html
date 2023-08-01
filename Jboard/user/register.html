@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jboard::register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h3>Board System v1.0</h3>
+        </header>
+        <main>
+            <section id="user" class="register">
+                <form accept="#" method="post">
+                <table border="1">
+                    <caption>사이트 이용정보 입력</caption>
+                    <tbody>
+                        <tr>
+                            <td>아이디</td>
+                            <td>
+                                <input type="text" name="uid" placeholder="아이디입력">
+                                <button><img src="../images/chk_id.gif" alt="중복확인"></button>
+                            </td>
+                            <span class="resultId"></span>
+                        </tr>
+                        <tr>
+                            <td>비밀번호</td>
+                            <td><input type="text" name="passEnter" placeholder="비밀번호 입력"></td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호 확인</td>
+                            <td><input type="text" name="passCheck" placeholder="비밀번호 확인 입력 "></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table border="1">
+                    <caption>개인정보 입력</caption>
+                    <tbody>
+                        <tr>
+                            <td>이름</td>
+                            <td><input type="text" name="name" placeholder="이름 입력"></td>
+                        </tr>
+                        <tr>
+                            <td>별명</td>
+                            <td>
+                                <p>공백없이 한글, 영문, 숫자만 입력가능</p>
+                                <input type="text" name="nick" placeholder="별명 입력">
+                                <span class="resultNick"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail</td>
+                            <td><input type="text" name="passEnter" placeholder="이메일 입력"></td>
+                        </tr>
+                        <tr>
+                            <td>휴대폰</td>
+                            <td><input type="text" name="passCheck" placeholder="- 포함 13자리 입력 "></td>
+                        </tr>
+                        <tr>
+                            <td>주소</td>
+
+                            <td>
+                                <div>
+                                    <input type="text" name="uid" placeholder="우편번호">
+                                    <button class="btnZip"><img src="../images/chk_post.gif" alt="우편번호찾기"></button>
+                                </div>
+                                <div>
+                                    <input type="text" name="uid" placeholder="주소를 검색하세요.">
+                                </div>
+                                <div> 
+                                    <input type="text" name="uid" placeholder="상세주소를 입력하세요.">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <a href="./login.html" class="btnCanel">취소</a>
+                    <a href="./register.html" class="btnJoin">회원가입</a>
+                </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>ⓒCopyright 이현정.com</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
