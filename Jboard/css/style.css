@@ -370,6 +370,7 @@ form {
 }
 table td {
     border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 .write table td {
     padding: 12px 6px;
