@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FarmStory:: Hello</title>
+    <title>FarmStory:: event</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
 
@@ -33,26 +33,61 @@
             </ul>
         </header>
         <div id ="sub">
-            <div class="bg"><img src="../images/sub_top_tit1.png" alt="introduction"></div>
-            <section class="introduction">
+            <div class="bg"><img src="../images/sub_top_tit2.png" alt="MARKET"></div>
+            <section class="market"> 
                 <aside>
-                    <img src="../images/sub_aside_cate1_tit.png" alt="팜스토리소개">
+                    <img src="../images/sub_aside_cate2_tit.png" alt="장보기">
                     <ol class="lnb">
-                        <li><a href="#">인사말</a></li>
-                        <li class="on"><a href="#">찾아오시는길</a></li>
+                        <li class="on"><a href="#">이벤트</a></li>
                     </ol>
                 </aside>
                 <article class="content">
                     <nav>
-                        <img src="../images/sub_nav_tit_cate1_tit2.png" alt="찾아오시는길">
+                        <img src="../images/sub_nav_tit_cate2_tit1.png" alt="장보기">
                         <p>
-                            HOME > 팜스토리소개 > <strong>찾아오시는길</strong>
+                            HOME > 장보기 > <strong>장보기</strong>
                         </p>
                     </nav>
                     <!-- 컨텐츠 시작-->
-                    <p>
-                        찾아오시는길 페이지 입니다.
-                    </p>
+                    <h3>기본정보</h3>
+                    <div class="basic">
+                        <img src="../images/market_item_thumb.jpg" alt="딸기">
+                        <a href="./order.html" class="btnOrder">
+                            <img src="../images/market_btn_order.gif" alt="바로구매하기">
+                        </a>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>상품명</td>
+                                    <td>딸기 500g</td>
+                                </tr>
+                                <tr>
+                                    <td>상품코드</td>
+                                    <td>01</td>
+                                </tr>
+                                <tr>
+                                    <td>배송비</td>
+                                    <span>5,000</span>원
+                                    <em>3만원 이상 무료배송</em>
+                                </tr>
+                                <tr>
+                                    <td>판매가격</td>
+                                    <td>4,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>구매수량</td>
+                                    <td>
+                                        <input type="number" name="count" min="1" value="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>합계</td>
+                                    <td class="total">4,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
                     <!-- 컨텐츠 끝-->
                 </article>
             </section>
